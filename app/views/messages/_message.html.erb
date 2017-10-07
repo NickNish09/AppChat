@@ -1,0 +1,6 @@
+
+	<% @chatroom.messages.each do |message| %>
+	<%= message.user.email%>
+	<%= message.content %>
+	<br>
+	<% end %>

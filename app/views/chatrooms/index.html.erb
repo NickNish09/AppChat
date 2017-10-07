@@ -14,9 +14,7 @@
     <% @chatrooms.each do |chatroom| %>
       <tr>
         <td><%= chatroom.topic %></td>
-        <td><%= link_to 'Show', chatroom %></td>
-        <td><%= link_to 'Edit', edit_chatroom_path(chatroom) %></td>
-        <td><%= link_to 'Destroy', chatroom, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Show', chatroom,class: "btn btn-primary" %></td>
       </tr>
     <% end %>
   </tbody>
@@ -24,4 +22,4 @@
 
 <br>
 
-<%= link_to 'New Chatroom', new_chatroom_path %>
+<%= link_to 'New Chatroom', new_chatroom_path,class: "btn btn-success" %>
